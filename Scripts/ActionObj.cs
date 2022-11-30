@@ -192,7 +192,7 @@ public class ActionObj : MonoBehaviour
 
             _jointBase.constraints = RigidbodyConstraints.FreezePositionY;
             _jointBase.mass = 1;
-            _jointBase.position = Vector3.Lerp(_joint.connectedBody.position, mousePos, 10 * Time.deltaTime);
+            _jointBase.position = Vector3.Lerp(_joint.connectedBody.position, mousePos, 50 * Time.deltaTime);
         }
     }
 
