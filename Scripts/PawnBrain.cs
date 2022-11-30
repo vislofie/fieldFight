@@ -101,6 +101,8 @@ public class PawnBrain : MonoBehaviour, IPawnBrain
         _rigidbody.isKinematic = true;
 
         _alive = true;
+
+        StopAllCoroutines();
     }
 
     virtual public void EndTurn()
