@@ -57,9 +57,14 @@ public class MatchManager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.R) && _step <= _allyCount - 1)
+        if (Input.GetKeyDown(KeyCode.Space) && _step <= _allyCount - 1)
         {
             EndTurn();
+        }
+        
+        else if (Input.GetKeyDown(KeyCode.R))
+        {
+            Restart();
         }
     }
 
