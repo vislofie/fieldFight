@@ -258,6 +258,7 @@ public class PawnChars : MonoBehaviour
     public void ResetValues()
     {
         _hp = _maxHp;
+        _additiveHp = 0;
         _applicableEffects.Clear();
         _fixedEffects.Clear();
         TryApplyAllEffects();
